@@ -6,7 +6,7 @@
 // XML documentation location: C:\Users\hello\.nuget\packages\microsoft.crmsdk.coreassemblies\9.0.2.46\lib\net462\Microsoft.Xrm.Sdk.xml
 
 using System.ServiceModel;
-using System.ServiceModel.Web;
+//using System.ServiceModel.Web;
 
 namespace Microsoft.Xrm.Sdk
 {
@@ -14,7 +14,7 @@ namespace Microsoft.Xrm.Sdk
   public interface IWebHttpServiceEndpointPlugin
   {
     [OperationContract]
-    [WebInvoke(Method = "POST")]
+    //[WebInvoke(Method = "POST")]
     [FaultContract(typeof (ServiceEndpointFault))]
     string Execute(RemoteExecutionContext executionContext);
   }

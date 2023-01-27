@@ -11,8 +11,9 @@ namespace Microsoft.Xrm.Sdk.Common
 {
   internal static class NetCoreExtensions
   {
-    public static void SetSupportInteractive(this ClientCredentials clientCredential, bool value) => clientCredential.SupportInteractive = value;
+    private static bool _interactive = false;
+    public static void SetSupportInteractive(this ClientCredentials clientCredential, bool value) => _interactive = value;//clientCredential.SupportInteractive = value;
 
-    public static bool GetSupportInteractive(this ClientCredentials clientCredentials) => clientCredentials.SupportInteractive;
+    public static bool GetSupportInteractive(this ClientCredentials clientCredentials) =>  _interactive;
   }
 }
