@@ -5,6 +5,7 @@
 // Assembly location: C:\Users\hello\.nuget\packages\microsoft.crmsdk.coreassemblies\9.0.2.46\lib\net462\Microsoft.Xrm.Sdk.dll
 // XML documentation location: C:\Users\hello\.nuget\packages\microsoft.crmsdk.coreassemblies\9.0.2.46\lib\net462\Microsoft.Xrm.Sdk.xml
 
+using System.Collections.ObjectModel;
 using System.ServiceModel.Description;
 using System.Linq;
 
@@ -23,6 +24,23 @@ namespace Microsoft.Xrm.Sdk.Common
     }
 
     public static T FindBehavior<T>(this ServiceEndpoint serviceEndpoint) where T : IEndpointBehavior
-      => serviceEndpoint.EndpointBehaviors.; //.Find<T>();
+      => serviceEndpoint.EndpointBehaviors.Find<T>();
+
+    public static T Find<T>(this KeyedCollection<Type,IEndpointBehavior> col) => col.Find<T>(false);
+
+    public static T Find<T>(this KeyedCollection<Type, IEndpointBehavior> col, bool remove)
+    {
+      for (int index = 0; index < col.Count; ++index)
+      {
+        IEndpointBehavior obj = col[index];
+        if ((object) obj is T)
+        {
+          if (remove)
+            col.Remove(obj);
+          return (T) (object) obj;
+        }
+      }
+      return default (T);
+    }
   }
 }
