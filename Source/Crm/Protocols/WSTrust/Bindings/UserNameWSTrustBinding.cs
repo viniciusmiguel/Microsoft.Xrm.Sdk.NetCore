@@ -1,4 +1,5 @@
 ﻿
+/*
 // Decompiled with JetBrains decompiler
 // Type: Microsoft.Crm.Protocols.WSTrust.Bindings.UserNameWSTrustBinding
 // Assembly: Microsoft.Xrm.Sdk, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
@@ -70,3 +71,4 @@ namespace Microsoft.Crm.Protocols.WSTrust.Bindings
     }
   }
 }
+*/

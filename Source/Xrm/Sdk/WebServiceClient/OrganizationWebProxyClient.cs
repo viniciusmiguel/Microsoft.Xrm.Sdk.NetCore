@@ -1,4 +1,5 @@
-﻿using Microsoft.Xrm.Sdk.Query;
+﻿/*
+using Microsoft.Xrm.Sdk.Query;
 using System;
 using System.Reflection;
 
@@ -103,3 +104,4 @@ namespace Microsoft.Xrm.Sdk.WebServiceClient
     protected override WebProxyClientContextInitializer<IOrganizationService> CreateNewInitializer() => new OrganizationWebProxyClientContextInitializer(this);
   }
 }
+*/

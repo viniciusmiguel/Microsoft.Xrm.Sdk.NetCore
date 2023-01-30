@@ -5,8 +5,8 @@
 // Assembly location: C:\Users\hello\.nuget\packages\microsoft.crmsdk.coreassemblies\9.0.2.46\lib\net462\Microsoft.Xrm.Sdk.dll
 // XML documentation location: C:\Users\hello\.nuget\packages\microsoft.crmsdk.coreassemblies\9.0.2.46\lib\net462\Microsoft.Xrm.Sdk.xml
 
-using System.IdentityModel.Protocols.WSTrust;
 using System.IdentityModel.Tokens;
+using Microsoft.IdentityModel.Protocols.WsTrust;
 
 namespace Microsoft.Xrm.Sdk.Client
 {

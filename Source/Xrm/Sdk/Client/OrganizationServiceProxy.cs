@@ -1,4 +1,5 @@
-﻿using Microsoft.Xrm.Sdk.Query;
+﻿/*
+using Microsoft.Xrm.Sdk.Query;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
@@ -607,3 +608,4 @@ namespace Microsoft.Xrm.Sdk.Client
     public EntityCollection RetrieveMultiple(QueryBase query) => RetrieveMultipleCore(query);
   }
 }
+*/

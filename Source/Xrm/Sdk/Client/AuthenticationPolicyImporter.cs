@@ -1,4 +1,5 @@
-﻿// Decompiled with JetBrains decompiler
+﻿/*
+// Decompiled with JetBrains decompiler
 // Type: Microsoft.Xrm.Sdk.Client.AuthenticationPolicyImporter
 // Assembly: Microsoft.Xrm.Sdk, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
 // MVID: CB9267C5-A024-49B5-925F-75FBF25C45C6
@@ -264,3 +265,4 @@ namespace Microsoft.Xrm.Sdk.Client
     }
   }
 }
+*/
